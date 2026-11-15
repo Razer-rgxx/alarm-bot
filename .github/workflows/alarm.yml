@@ -32,6 +32,7 @@ jobs:
       - name: 상태 저장
         if: always()
         run: |
+          [ -f state.json ] || exit 0
           git config user.name "alarm-bot"
           git config user.email "alarm-bot@users.noreply.github.com"
           git add state.json
