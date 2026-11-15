@@ -1,5 +1,5 @@
 {
-  "last_message_id": "1571502785290313881",
+  "last_message_id": "1571507823618162721",
   "next_id": 2,
   "watches": [
     {
@@ -12,9 +12,9 @@
       "check_every_hours": 2,
       "remind_before_minutes": 30,
       "created": "2026-11-15T21:23:35.557170+09:00",
-      "last_checked": null,
+      "last_checked": "2026-11-15T21:54:48.026601+09:00",
       "events": {},
-      "last_error": "Gemini 오류 429: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. "
+      "last_error": "Gemini 오류 400: API key not valid. Please pass a valid API key."
     }
   ]
 }
