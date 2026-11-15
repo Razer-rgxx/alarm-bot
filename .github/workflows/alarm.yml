@@ -1,0 +1,38 @@
+name: Gemini 알림봇
+
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: alarm-bot
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: 봇 실행
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
+          DISCORD_CHANNEL_ID: ${{ secrets.DISCORD_CHANNEL_ID }}
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
+        run: python bot.py
+      - name: 상태 저장
+        if: always()
+        run: |
+          git config user.name "alarm-bot"
+          git config user.email "alarm-bot@users.noreply.github.com"
+          git add state.json
+          git diff --cached --quiet || (git commit -m "상태 업데이트" && git push)
