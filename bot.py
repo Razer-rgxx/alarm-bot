@@ -293,6 +293,7 @@ def run_watch(watch: dict) -> None:
     try:
         events = search_events(watch)
     except Exception as e:
+        watch["last_checked"] = now.isoformat()  # 실패해도 다음 주기까지 기다림 (한도 낭비 방지)
         err = str(e)[:400]
         print(f"[{watch['title']}] 검색 실패: {err}", file=sys.stderr)
         if watch.get("last_error") != err:  # 같은 에러는 한 번만 알림
