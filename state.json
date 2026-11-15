@@ -1,6 +1,6 @@
 {
-  "last_message_id": "1571535009016324189",
-  "next_id": 4,
+  "last_message_id": "1571535766650224812",
+  "next_id": 8,
   "watches": [
     {
       "id": 3,
@@ -14,6 +14,122 @@
       "created": "2026-11-15T23:32:55.465386+09:00",
       "last_checked": "2026-11-15T23:32:55.838335+09:00",
       "events": {}
+    },
+    {
+      "id": 4,
+      "type": "youtube",
+      "request": "@코마 @조밈 @구릉다 @케비지떡 시참 알려줘",
+      "title": "코마 방송",
+      "channel": "코마",
+      "keywords": [
+        "시참",
+        "시청자 참여",
+        "시청자참여"
+      ],
+      "remind_before_minutes": 30,
+      "created": "2026-11-16T00:23:04.316241+09:00",
+      "events": {},
+      "fails": 0,
+      "posts_checked": "2026-11-16T00:23:04.724443+09:00",
+      "seen_live": [],
+      "seen_posts": [
+        "Ugkx1G-3rj-sMloye7zz9fgHKkJ2x4Kijmxn",
+        "UgkxmsL_s9JJeHdSuLwq06dkVp42gZHSczC2"
+      ],
+      "initialized": true
+    },
+    {
+      "id": 5,
+      "type": "youtube",
+      "request": "@코마 @조밈 @구릉다 @케비지떡 시참 알려줘",
+      "title": "조밈 방송",
+      "channel": "조밈",
+      "keywords": [
+        "시참",
+        "시청자 참여",
+        "시청자참여"
+      ],
+      "remind_before_minutes": 30,
+      "created": "2026-11-16T00:23:04.316257+09:00",
+      "events": {},
+      "fails": 0,
+      "posts_checked": "2026-11-16T00:23:05.577949+09:00",
+      "seen_live": [],
+      "seen_posts": [
+        "Ugkxm8ibhF0Z2fL_lgaNCFVJSC_jGBRt0bHe",
+        "UgkxM7Rszw2hH18PF6qvH5Fb_y8TwYIvtzr9",
+        "UgkxHguEvT6RHmGf18GLiAS5EFTuCM1r3Mtm",
+        "UgkxiCdgj53zLcgRnS0ULF83ynXKRKRThjPq",
+        "UgkxcLBXoo2NUKrB8sVUz3SJ8YR9XuqbSBpy",
+        "UgkxmzrPmDQg91YeZMgLu7ExdViTYiZTQC2u",
+        "UgkxS9cHyFaD6ErNt-D5yFfpLL0G3XlLfI7R",
+        "Ugkx8kjGFMj42vr_vV4wDsW7wUmZC0hbm_9g",
+        "UgkxOT3iWITCtzla3brZIoBlBHgHld70X06r",
+        "UgkxNurkXm_5PBO8FrYyHiwa5VxW-H316uvx"
+      ],
+      "initialized": true
+    },
+    {
+      "id": 6,
+      "type": "youtube",
+      "request": "@코마 @조밈 @구릉다 @케비지떡 시참 알려줘",
+      "title": "구릉다 방송",
+      "channel": "구릉다",
+      "keywords": [
+        "시참",
+        "시청자 참여",
+        "시청자참여"
+      ],
+      "remind_before_minutes": 30,
+      "created": "2026-11-16T00:23:04.316261+09:00",
+      "events": {},
+      "fails": 0,
+      "posts_checked": "2026-11-16T00:23:06.118118+09:00",
+      "seen_live": [],
+      "seen_posts": [
+        "UgkxfT5j_QJaJxTMGSanwax_ETKDtasAKzBG",
+        "UgkxSMjOQ1d9JrqCF8VqD_j986Wh1-MyY0XB",
+        "UgkxbGE8JXxwk_PFbgLhwxmYanLvKUYu-Fwv",
+        "UgkxXi9F599LB8Qg27qcTPPFitCSr-CwJUbd",
+        "UgkxvHuWSmHhQM0IP_oSXZ623PwxlR-lwa93",
+        "Ugkxnellz2aIq36J0f5_bUfDUvzL5xZgdOGI",
+        "UgkxnZx3sbuAs2bVIQc59plT1Lu8O_6PTaYZ",
+        "UgkxRbJ3q5qmSJlzle1FKGvtl0SFxekkSkH2",
+        "UgkxHsItCb8eSUCB-NBqzX9ek0Bp3AJRzwW2",
+        "UgkxV4NHzUD1knEGS5EISEYam4vAhHVhypoo"
+      ],
+      "initialized": true
+    },
+    {
+      "id": 7,
+      "type": "youtube",
+      "request": "@코마 @조밈 @구릉다 @케비지떡 시참 알려줘",
+      "title": "케비지떡 방송",
+      "channel": "케비지떡",
+      "keywords": [
+        "시참",
+        "시청자 참여",
+        "시청자참여"
+      ],
+      "remind_before_minutes": 30,
+      "created": "2026-11-16T00:23:04.316265+09:00",
+      "events": {},
+      "fails": 0,
+      "posts_checked": "2026-11-16T00:23:06.957364+09:00",
+      "seen_live": [],
+      "seen_posts": [
+        "UgkxLQcGNpRaz3LptBXSQozpSKs3CQ3GvYXh",
+        "UgkxoSM7dUk3m63WEPEBgvfF3yjj_eGZ4jPb",
+        "Ugkx32tXNAAFRLjHhd60i9L8mrDfJS_mnHGG",
+        "UgkxFqmBtFyFW-loPsZy1H2sq5fYPz4LNoBB",
+        "UgkxwO8Jl8dD0FUnue3Q_-YvJMIVMWYIT3ig",
+        "UgkxcS7G9ogWXylwetqAg1n4Qm1d9KtgyvPe",
+        "Ugkxeqgk14UARCORbi7VozBaHz6wkk2iYqXb",
+        "UgkxqAM_mcaiVIt3tgJ2AyCCjdPD0OtQtV0_",
+        "UgkxnVQ-RWOfMIz5Oe5Z1s3RwskUnDKMPk16",
+        "UgkxBUvKJOu8nXopvdXSrKh1SZtzs4uPglTF"
+      ],
+      "initialized": true
     }
   ],
   "_warned_intent": true
