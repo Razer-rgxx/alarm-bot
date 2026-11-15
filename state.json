@@ -1,6 +1,6 @@
 {
-  "last_message_id": "1571533057117265961",
-  "next_id": 3,
+  "last_message_id": "1571533239070498848",
+  "next_id": 4,
   "watches": [
     {
       "id": 2,
@@ -15,6 +15,19 @@
       "last_checked": "2026-11-15T22:29:40.288942+09:00",
       "events": {},
       "last_error": "Gemini 오류 429: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. "
+    },
+    {
+      "id": 3,
+      "request": "포켓몬 고 레이드 일정 관련 소식",
+      "title": "포켓몬 고 레이드 일정",
+      "search_query": "포켓몬 고 레이드 일정 소식 Pokémon GO raid schedule",
+      "event_description": "포켓몬 고의 새로운 전설 레이드, 메가 레이드, 레이드 데이 등 레이드 배틀 관련 공식 일정 및 이벤트 소식이 발표됨",
+      "where_to_look": "포켓몬 고 공식 블로그, 공식 X(트위터), 공식 나이언틱 커뮤니티",
+      "check_every_hours": 12,
+      "remind_before_minutes": 30,
+      "created": "2026-11-15T23:32:55.465386+09:00",
+      "last_checked": "2026-11-15T23:32:55.838335+09:00",
+      "events": {}
     }
   ],
   "_warned_intent": true
