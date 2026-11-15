@@ -96,7 +96,12 @@ def gemini(prompt: str, search: bool = False, json_mode: bool = False) -> str:
     r = requests.post(GEMINI_URL.format(model=GEMINI_MODEL),
                       headers={"x-goog-api-key": GEMINI_API_KEY},
                       json=body, timeout=180)
-    r.raise_for_status()
+    if r.status_code >= 400:
+        try:
+            detail = r.json().get("error", {}).get("message", r.text)
+        except ValueError:
+            detail = r.text
+        raise RuntimeError(f"Gemini 오류 {r.status_code}: {detail[:300]}")
     data = r.json()
     parts = data.get("candidates", [{}])[0].get("content", {}).get("parts", [])
     return "".join(p.get("text", "") for p in parts)
@@ -204,10 +209,17 @@ def fmt_time(t) -> str:
 
 
 def handle_message(state: dict, msg: dict) -> None:
-    text = msg.get("content", "").strip()
+    raw = msg.get("content", "")
+    text = re.sub(r"<@[!&]?\d+>", "", raw).strip()  # 멘션 제거
     mid = msg["id"]
-    if not text:
+    if not raw and not msg.get("attachments") and not msg.get("embeds"):
+        if not state.get("_warned_intent"):
+            state["_warned_intent"] = True
+            send("⚠️ 메시지 내용을 읽을 수 없어요. 디스코드 개발자 사이트 → 봇(Bot) → "
+                 "**MESSAGE CONTENT INTENT** 를 켜고 저장한 뒤 다시 보내 주세요.", mid)
         return
+    if not text:
+        return  # 멘션만 있는 메시지는 무시
     watches = state["watches"]
 
     if text in ("도움말", "help", "!help", "?"):
@@ -281,9 +293,14 @@ def run_watch(watch: dict) -> None:
     try:
         events = search_events(watch)
     except Exception as e:
-        print(f"[{watch['title']}] 검색 실패: {e}", file=sys.stderr)
+        err = str(e)[:400]
+        print(f"[{watch['title']}] 검색 실패: {err}", file=sys.stderr)
+        if watch.get("last_error") != err:  # 같은 에러는 한 번만 알림
+            watch["last_error"] = err
+            send(f"⚠️ [{watch['id']}번 {watch['title']}] 검색 실패\n```{err}```")
         return
     watch["last_checked"] = now.isoformat()
+    watch.pop("last_error", None)
 
     for ev in events:
         if ev.get("confidence") == "low":
