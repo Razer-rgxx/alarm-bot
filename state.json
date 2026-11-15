@@ -1,0 +1,19 @@
+{
+  "last_message_id": "1571498042086137960",
+  "next_id": 2,
+  "watches": [
+    {
+      "id": 1,
+      "request": "<@1571491431846248458>",
+      "title": "유저 언급 및 소식 감시",
+      "search_query": "1571491431846248458 소식 공지",
+      "event_description": "지정된 유저(<@1571491431846248458>)와 관련된 새로운 일정, 공지, 또는 방송 예고가 게시됨",
+      "where_to_look": "디스코드 공지 채널, X(트위터), 공식 카페 및 커뮤니티",
+      "check_every_hours": 2,
+      "remind_before_minutes": 30,
+      "created": "2026-11-15T21:23:35.557170+09:00",
+      "last_checked": null,
+      "events": {}
+    }
+  ]
+}
