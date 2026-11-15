@@ -1,21 +1,7 @@
 {
-  "last_message_id": "1571533239070498848",
+  "last_message_id": "1571535009016324189",
   "next_id": 4,
   "watches": [
-    {
-      "id": 2,
-      "request": "포켓몬 고 레이드 일정 관련 소식",
-      "title": "포켓몬 고 레이드 일정",
-      "search_query": "포켓몬 고 레이드 일정 소식 Pokemon GO raid schedule",
-      "event_description": "포켓몬 고의 새로운 레이드 배틀 일정, 대상 포켓몬 및 관련 이벤트 소식이 공지되는 경우",
-      "where_to_look": "포켓몬 고 공식 블로그/홈페이지, 공식 트위터(X), 포켓몬 고 커뮤니티",
-      "check_every_hours": 6,
-      "remind_before_minutes": 30,
-      "created": "2026-11-15T22:29:39.938740+09:00",
-      "last_checked": "2026-11-15T22:29:40.288942+09:00",
-      "events": {},
-      "last_error": "Gemini 오류 429: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. "
-    },
     {
       "id": 3,
       "request": "포켓몬 고 레이드 일정 관련 소식",
