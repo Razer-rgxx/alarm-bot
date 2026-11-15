@@ -1,20 +1,20 @@
 {
-  "last_message_id": "1571516289841758360",
-  "next_id": 2,
+  "last_message_id": "1571517316464906241",
+  "next_id": 3,
   "watches": [
     {
-      "id": 1,
-      "request": "<@1571491431846248458>",
-      "title": "유저 언급 및 소식 감시",
-      "search_query": "1571491431846248458 소식 공지",
-      "event_description": "지정된 유저(<@1571491431846248458>)와 관련된 새로운 일정, 공지, 또는 방송 예고가 게시됨",
-      "where_to_look": "디스코드 공지 채널, X(트위터), 공식 카페 및 커뮤니티",
-      "check_every_hours": 2,
+      "id": 2,
+      "request": "포켓몬 고 레이드 일정 관련 소식",
+      "title": "포켓몬 고 레이드 일정",
+      "search_query": "포켓몬 고 레이드 일정 소식 Pokemon GO raid schedule",
+      "event_description": "포켓몬 고의 새로운 레이드 배틀 일정, 대상 포켓몬 및 관련 이벤트 소식이 공지되는 경우",
+      "where_to_look": "포켓몬 고 공식 블로그/홈페이지, 공식 트위터(X), 포켓몬 고 커뮤니티",
+      "check_every_hours": 6,
       "remind_before_minutes": 30,
-      "created": "2026-11-15T21:23:35.557170+09:00",
-      "last_checked": "2026-11-15T21:54:48.026601+09:00",
+      "created": "2026-11-15T22:29:39.938740+09:00",
+      "last_checked": "2026-11-15T22:29:40.288942+09:00",
       "events": {},
-      "last_error": "Gemini 오류 400: API key not valid. Please pass a valid API key."
+      "last_error": "Gemini 오류 429: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. "
     }
   ],
   "_warned_intent": true
