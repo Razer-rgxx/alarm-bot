@@ -1,5 +1,5 @@
 {
-  "last_message_id": "1571535766650224812",
+  "last_message_id": "1571546085028007937",
   "next_id": 8,
   "watches": [
     {
@@ -29,7 +29,7 @@
       "remind_before_minutes": 30,
       "created": "2026-11-16T00:23:04.316241+09:00",
       "events": {},
-      "fails": 0,
+      "fails": 1,
       "posts_checked": "2026-11-16T00:23:04.724443+09:00",
       "seen_live": [],
       "seen_posts": [
@@ -53,7 +53,7 @@
       "created": "2026-11-16T00:23:04.316257+09:00",
       "events": {},
       "fails": 0,
-      "posts_checked": "2026-11-16T00:23:05.577949+09:00",
+      "posts_checked": "2026-11-16T01:10:47.022488+09:00",
       "seen_live": [],
       "seen_posts": [
         "Ugkxm8ibhF0Z2fL_lgaNCFVJSC_jGBRt0bHe",
@@ -84,7 +84,7 @@
       "created": "2026-11-16T00:23:04.316261+09:00",
       "events": {},
       "fails": 0,
-      "posts_checked": "2026-11-16T00:23:06.118118+09:00",
+      "posts_checked": "2026-11-16T01:10:47.511308+09:00",
       "seen_live": [],
       "seen_posts": [
         "UgkxfT5j_QJaJxTMGSanwax_ETKDtasAKzBG",
@@ -115,7 +115,7 @@
       "created": "2026-11-16T00:23:04.316265+09:00",
       "events": {},
       "fails": 0,
-      "posts_checked": "2026-11-16T00:23:06.957364+09:00",
+      "posts_checked": "2026-11-16T01:10:48.170645+09:00",
       "seen_live": [],
       "seen_posts": [
         "UgkxLQcGNpRaz3LptBXSQozpSKs3CQ3GvYXh",
