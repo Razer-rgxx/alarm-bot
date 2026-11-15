@@ -1,5 +1,5 @@
 {
-  "last_message_id": "1571508770830418031",
+  "last_message_id": "1571516289841758360",
   "next_id": 2,
   "watches": [
     {
@@ -16,5 +16,6 @@
       "events": {},
       "last_error": "Gemini 오류 400: API key not valid. Please pass a valid API key."
     }
-  ]
+  ],
+  "_warned_intent": true
 }
