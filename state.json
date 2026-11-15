@@ -13,7 +13,8 @@
       "remind_before_minutes": 30,
       "created": "2026-11-15T21:23:35.557170+09:00",
       "last_checked": null,
-      "events": {}
+      "events": {},
+      "last_error": "Gemini 오류 429: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. "
     }
   ]
 }
